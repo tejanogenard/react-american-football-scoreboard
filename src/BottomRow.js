@@ -1,12 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 
 const BottomRow = () => {
+      const [down, setDown] = useState(0);
+      const [toGo, setToGo] = useState(0);
+
+
   return (
     <div className="bottomRow">
       <div className="down">
         <h3 className="down__title">Down</h3>
-        <div className="down__value">3</div>
+  <div className="down__value">{down}</div>
       </div>
       <div className="toGo">
         <h3 className="toGo__title">To Go</h3>
